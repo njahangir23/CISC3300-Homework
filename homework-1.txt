@@ -17,8 +17,12 @@
 
 4.An HTML element is a collection of start and end tags with code between them. They are the building blocks of a webpage.
   Tags in HTML act like containers, they tell the the browser something about the information inbetween the tags, this is
-  the idea of markup being employeed in HTML. Example: opening tag: <p> and closing tag </p>. And HTML attribute tells 
-  the browser more about the content of the element. They have names and values.
+  the idea of markup being employeed in HTML. Example: opening tag: <p> and closing tag </p>. A character is inbetween the
+  angled brackets, the character indicates the tags prupose, in the example provided, 'p' is the character, it stands for
+  paragraph, meaning that the content between the open and start tag are text for paragraph. An HTML attribute tells the 
+  browser more about the content of the element. They have names and values. The content between the tags can be the text
+  displayed onto the browser, the content (images, links, etc.), other tags (ex. <div><p>this text</p></div>), 
+
 
 5.A CSS rule contains two parts: a selector and a declaration. 
   p{        ------> 'p' is the selector, indicates which element the rule has to apply to.
@@ -29,9 +33,12 @@
   tkae precedence over the more general one. Another way CSS rules cascade is by the order in which they appear in the
   the code. If two selectors are the same, the latter one will take precedence. Another way CSS rules cascade is by 
   adding the '!important' after any property value to indicate that it should be considered more important than other
-  rules that apply to the same element.
+  rules that apply to the same element. CSS rules also cascade by inheritance, it helps decide what style is applied based
+  on the parent-child relationship between the elements. If a style is used for a parent element, the child will inherit it,
+  it will be applied to the child element unless it is overruled/redefined by a more specific style.
 
 7.<img src="../images/pinecone.jpg" alt="Pinecone">
 
 8.When submitting an HTML form, the default behavior is to send the form data to the server specified in the form's 
-  action attribute, using the method specified in the method attribute.
+  action attribute, using the method specified in the method attribute. If nothing is specified by any attribute, the
+  the server attempts to send the data to the current homepage.
