@@ -1,0 +1,14 @@
+3. Flexbox and CSS Grid are both useful layout systems in CSS, but they serve different purposes and have unique 
+characteristics. Here’s a breakdown of their similarities and differences:Both Flexbox and CSS Grid are designed 
+to create responsive layouts that adapt to different screen sizes. They both simplify complex layouts compared 
+to older methods (like floats or positioning), making it easier to align and distribute space between elements.
+However, flexbox is a one-dimensional, it deals with layouts in a single direction—either as a row or a column. 
+It’s great for aligning items within a single line and on a smaller scale. Items are laid out in the order they 
+appear in the source code. It can rearrange them with properties like order, but it still follows a flow. The 
+properties used with flexbox are: flex-direction, flex-wrap, justify-content, and align-items.
+On the other hand, CSS Grid is a two-dimensional layout. It allows for layout in both rows and columns simultaneously, 
+making it ideal for creating complex grid structures.Because of this, the CSS grid is better suited for larger layouts, 
+such as overall page structures. You can define rows and columns and place items into specific grid areas. You can 
+position items anywhere in the grid using grid lines, allowing for more complex designs without changing the HTML 
+structure. CSS Grid utilizes properties like grid-template-columns, grid-template-rows, and grid-area, giving you 
+more control over the layout structure.
