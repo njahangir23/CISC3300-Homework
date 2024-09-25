@@ -1,0 +1,31 @@
+1. In certain programming languages the source code is not directly translated by the target
+machine. Instead, a different program, aka the interpreter, reads and executes the code,
+this is called an ________ language.------------------------------------------------------interpreted
+
+2. Type checking is performed at runtime, means that the type of a variable is allowed to
+change over its lifetime, this is called ________ typing.------------------------------------dynamic
+
+3. JS for web browser work doesn’t tend to use classes to make objects, and is written in a
+more ________ style.-------------------------------------------------------------------------functional
+
+4. Variables that are block scoped, not declarable use the keyword ________------------------var
+
+5. ________ determines the accessibility (visibility) of variables.--------------------------scope
+
+6. Variables assigned with the ________ keyword are block scoped and not redeclarable.------const
+
+7. Functions that can be passed as an argument to another function and called later are
+called ________.----------------------------------------------------------------------------higher-order functions
+
+8. Non primitive data types are (almost)all technically ________ in memory.-----------------objects
+
+Notes:
+- Javascript handles the dynamic functionality on the web page
+- C++ is a complied language, Javascript is a interpreted language
+- JS doesn't use classes to make objects 
+- Method: a verb in programming, a function in the context of an object is a Method
+- Script---->interpreted language
+- Window is the browser, global object
+- Docuement is the html file, global object
+- 'this' keyword always refers to an object
+- 
