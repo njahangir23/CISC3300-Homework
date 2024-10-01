@@ -15,7 +15,7 @@ more ________ style.------------------------------------------------------------
 6. Variables assigned with the ________ keyword are block scoped and not redeclarable.------const
 
 7. Functions that can be passed as an argument to another function and called later are
-called ________.----------------------------------------------------------------------------higher-order functions
+called ________.----------------------------------------------------------------------------callback functions
 
 8. Non primitive data types are (almost)all technically ________ in memory.-----------------objects
 

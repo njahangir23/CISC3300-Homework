@@ -26,7 +26,7 @@
 
 5.A CSS rule contains two parts: a selector and a declaration. 
   p{        ------> 'p' is the selector, indicates which element the rule has to apply to.
-    color: blue  -> the declaration how the elements referred to in the selector should be styled, has a porperty and value.
+    color: blue  -> the declaration how the elements referred to in the selector should be styled, has a property and value.
   }
 
 6.CSS rules cascade by specificity, if a selector is more descriptive/specific than the other one, the more specific will

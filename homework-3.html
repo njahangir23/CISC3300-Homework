@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Homework 4</title>
+
+     <script>
+        const cats = [
+    {
+        name: 'Charlie',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Lily',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Coco',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Oreo',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Luna',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Milo',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Lola',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Leo',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Willow',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Bella',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Max',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Cleo',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Lucy',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Daisy',
+        adoptionStatus: 'available'
+    },
+];
+
+const cat = {name:"Pinecone", age:13, type:'Munchkin', cuteness: 9001};
+
+let result = [];
+
+  for(let i=0; i<cats.length; ++i)
+  {
+    if(cats[i].adoptionStatus === 'available') {
+        result.push(cats[i].name)
+    }
+  }
+
+  let fullsentence = `Cats I adopted ${result.join(", ")}.`;
+  console.log(fullsentence);
+
+  let number=Math.random() * 10;
+  let final = number> 5 ? "greater than five!" : "less than five!";
+  console.log(final);
+
+  for(let i in cat){
+    console.log(cat[i]);
+  }
+
+  const num =1;
+  const str ='1';
+  const state='This statamenet is true';
+  const state2='This statement is false';
+
+  if(num == str){
+     console.log(state);
+  }
+  if( num === str){
+     console.log(state);
+  }else{
+    console.log(state2);
+  }
+
+    let newarray= cats.map(cat => `${cat.name} is cute!`);
+    console.log(newarray);
+
+        </script>
+    </head>
+</html>

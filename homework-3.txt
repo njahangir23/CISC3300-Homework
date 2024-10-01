@@ -1,0 +1,43 @@
+1. What is javascript? How does an interpreted programming language differ from a compiled language?
+Javascript is a interpreted programming langauge. It is a programming language usually used to add dynamic user 
+interactions on webpages, applications, servers and games. An interpreted programming language differs from a compiled
+language because in an interpreted language, the source code is not directly translated by the machine, instead another
+program interprets the reads and excutes the code. A compiled language is compiled (has a compile step) and the code is 
+turned into instructions for the machine which is unreadable by humans. It is faster than interpreted languages. 
+
+2. Contrast dynamically typed programming languages with statically typed ones. And contrast strongly typed programming 
+   languages with weakly typed ones. (google these)
+Dynamically typed programming languages type check during runtime, allowing for more flexibility because variables can 
+be set to different types of values throughout the program. However, errors related to the type of a variable  can go 
+undetected until a specific piece of code is executed, which can lead to runtime errors. Examples of this language are 
+JavaScript and Python.
+In comparison, statically typed programming languages type check during compile time, the type of a variable must be 
+declared in the code. This can lead to safer code since many type-related errors are caught early in the coding
+process. It can also improve performance, as the compiler can optimize the code knowing the types in advance. However,
+it is less flexible and requires more knowledge on both the user and the developers need to know the type of a variable
+before hand. Examples of this language: Java, C, C++.
+Strongly typed programming languages have strict rules about type conversions and operations. You cannot perform 
+operations on mismatched types without explicit conversion. This reduces the likelihood of type-related errors, as the
+language does not allow implicit type coercion (implicit type conversion). However, the strictness can make the code
+longer in order to include more lines for type conversion. Examples of this language: Python, C++ and Java.
+In contrast, weakly typed programs allow more room in how types can be used, making coding easier and faster for 
+certain tasks. You can mix types without explicit conversions. The flexibility can led to unpredictable behavior and 
+subtle bugs, as it may not always be clear how types will interact. Examples of this language: JavaScript and PHP.
+
+3. What is the difference between var, let, and const when declaring variables in JS?
+Var is a dated way of declaring a variable in JavaScript. It has global scope or function scope and can be redelcared 
+and updated within its scope. A let declaration has a block scope and is redeclarable (can be updated). Const also has
+a block scope but is not redeclarable (cannot be updated).
+
+4. What are anonymous functions? Higher order functions? Callback functions? First class functions?
+Anonymous functions are functions that do not have a names. It is often used in situations where the function is defined 
+for a one-time use. 
+Higher order functions are functions that take one or more functions as arguments or returns a function as its result.
+Callback functions are functions that passed into another function as an argument and is called later.
+First class functions appear in languages (JavaScript) that treat functions like other variables. Functions can be 
+assigned to variables, passed as arguments to other functions, returned from functions, and stored in data structures.
+
+5. Define objects in JavaScript.
+Objects in Javascript are a type of data structures. They are a collection of properties that have key value pairs. A 
+property has a key which assoicated to a value. They can also contain functions which are called methods when they are 
+properties of an object. Objects can be inherited. 
