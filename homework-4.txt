@@ -1,0 +1,30 @@
+1. What is the DOM? What is meant by the DOM tree?
+   DOM stands for the document object model. It specifies how browsers should create  a model of an HTML page and how JavaScript
+   can access and update the contents of a web page while it is in the browser window The DOM specifies the way in which 
+   the browser should structure this model using a DOM tree, it is made up of nodes (objects). It is an hierarchial structures 
+   with a document node all the way at the top of the tree. HTML elements are represented by their own nodes and have 
+   their attributes and content in nodes adjacent to them.
+
+2. What is an XSS attack? How do they work? How can you guard against them?
+   XSS, cross-site scripting attacks are when an attacker could gain access to websites' user accounts. The hacker can
+   add code into an input that is generated as HTML and gain this access. To guard against them, we need to be careful 
+   of what content we treat as HTML, and an input should very rarely have the option to show the input that the user
+   put in and we need to validate the inputs going to the server (strip it of potential malicious intent by removing tags,
+    escaping characters, etc).
+
+3. What is an event in JavaScript?
+   An event in JavaScript are things/actions that happen to HTML elements, they happen when users click or tap on a 
+   link, hover over an element or when the page loads. Events can trigger code that react the action.
+   
+4. How does a DOM eventListener work? What are the parameters it is expecting?
+   DOM eventListener sets up a function that will be called whenever the specified event is delivered to the target. 
+   The parameters are: an event type (e.g., "click"), the callback function to execute when the event occurs, and an 
+   optional options object for additional settings
+   
+5. What is jQuery? Why use it? How do we load jQuery onto a page?
+   jQuery is a lightweight "write less, do more", JavaScript library, it is supposed to make it easier to use JavaScript 
+   on a website. jQuery reduces the amount of code needed to do many common tasks by wrapping them into methods. We 
+   load it onto our webpage by linking a cdn link. jQuery simplifies HTML, DOM manipulation, event handling, CSS
+    animations and many more things to help us create a dynamic web page.
+
+   
