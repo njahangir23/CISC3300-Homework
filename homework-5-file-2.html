@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Recipes</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .box{
+            width: 200px;
+            padding: 50px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button{
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px;
+            margin: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .recipelist{
+            color:plum;
+            list-style-type: none;
+        }
+
+        textarea {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+
+    </style>
+
+    <script>
+        function getRecipes() {
+            $.ajax({
+                url: 'http://localhost:3000/recipes',
+                method: 'GET',
+                success: function(recipes) {
+                    let recipeList = '';
+                    recipes.forEach(function(recipe) {
+                        recipeList += `<li><h3>${recipe.title}</h3><p>${recipe.description}</p></li>`;
+                    });
+                    $('#recipe-list').html(recipeList);
+                },
+                error: function() {
+                    console.log()
+                }
+            });
+        }
+
+        function addRecipe(newRecipe) {
+            $.ajax({
+                url: 'http://localhost:3000/recipes',
+                method: 'POST',
+                contentType: 'json',
+                data: JSON.stringify(newRecipe),
+                success: function() {
+                    getRecipes(); 
+                },
+                error: function() {
+                    console.log()
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            getRecipes();
+
+            $('#recipe-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                const title = $('#title').val();
+                const description = $('#description').val();
+
+                const newRecipe = {
+                    title: title,
+                    description: description
+                };
+
+                addRecipe(newRecipe);
+
+                $('#title').val('');
+                $('#description').val('');
+            });
+        });
+    </script>
+
+  </head>
+
+  <body>
+    <form id="recipe-form">
+        <input type="text" id="title" class="box" placeholder="Title" />
+        <textarea id="description" rows="3" placeholder="Description"></textarea>
+        <input type="submit" class="button" value="Add Recipe" />
+    </form>
+    
+    <ul id="recipe-list" class="recipelist"></ul>
+  </body>
+
+
+</html>

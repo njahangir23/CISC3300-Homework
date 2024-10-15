@@ -1,0 +1,61 @@
+1. What is HTTP? What are the different HTTP request methods and how do they differ?
+   HTTP stands for Hypertext Transfer Protocol. It is a protocol used to send data over the web. It defines how requests
+   and responses are structured, allowing communication between clients and servers to fetch or send web resources, such
+   as HTML pages, images or data. GET is a HTTP request method, it retrieves data  from a server, it doesn't moditfy 
+   data. POST is another method, it sends data to a server to create or update a resource. PUT (request method) updates 
+   an existing resource on the server. DELETE (request method) delets a specified resource on the server. PATCH (request
+   method) partially updates an existing resource. Each method is useful for different reasons depending on the type of 
+   action a developer wants to perform on the server.
+
+2. What is an API? What is JSON?
+   API stands for Application Programming Interface, it is a set of rules and protocols that allow different software 
+   applications to communicate and share data with each other. It helps developers interact with services, databases 
+   or systems without needing to understand the internal workings. 
+   JSON stands for JavaScript Object Notation, it is a lightweight, text-based format used for representing structured 
+   data. It's used to transmit data between a server and a web application, making it easy to read and understand by 
+   both humans and machines
+
+3. What is AJAX? What is meant by asynchronous code?
+   AJAX stands for Asynchronous JavaScript and XML, it is a technique used to send and recieve data from a server in the 
+   background, without needing to reload the entire webpage. It allows web applications to update content 
+   dynamically, improving user experience by fetching or sending data asynchronously. Asynchronous code refers 
+   to programming that allows tasks to run independently of the main thread.Instead of waiting for a task to complete, 
+   the program can continue excuting other code and once the task finishes, it 'calls back' or triggers further actions.
+   This helps improve performance and responsiveness in applications. 
+
+4. What is REST and what are resources? 
+   REST stands for Representational State Transfer. It is an architectural style used in designing networked applications
+   like web services. It relies on certain HTTP methods (like GET, POST, PUT, DELETE) and treats everything as a resource 
+   that can be manipulated using those methods. Each resource is identified by a unique URI (Uniform Resource Identifier).
+   A resource is any object/any information: a document or image, a temporal service a collection of other resources, a n
+   on-virtual object (e.g., a person), and so on.A resource is a conceptual mapping to a set of entities, not the entity 
+   that corresponds to the mapping at any particular point in time.
+
+
+
+   If my application had a concept called posts and was designed in a RESTful way, what would the URI and HTTP request 
+   method be to:
+
+            a. retrieve multiple posts
+               URI: /posts/{id} 
+               HTTP Method: GET
+
+            b. retrieve a single post
+               URI: /posts/{id} 
+               HTTP Method: GET
+               
+            c. save a post
+               URI: /posts
+               HTTP Method: POST
+
+            d. update a post
+               URI: /posts/{id} 
+               HTTP Method: PUT (for full update) or PATCH (for partial update)
+
+5. Define hoisting and closures in JS.
+   Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their containing scope
+   (before code execution). This means you can use variables and functions before they are actually declared in the 
+   code. However, only the declarations are hoisted, not the initializations.
+   A closure is a function that retains access to variables from its outer (enclosing) scope, even after that outer 
+   function has finished executing. This allows the inner function to "remember" the environment in which it was created.
+

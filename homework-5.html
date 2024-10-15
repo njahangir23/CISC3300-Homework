@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Homework 5</title>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $.get('https://api.open-meteo.com/v1/forecast', {
+                latitude: 52.52,   
+                longitude: 13.44,
+                current_weather: true
+            }, 
+            function(data) {
+                const celsiusTemp = data.current_weather.temperature;
+                const fahrenheitTemp = (celsiusTemp * 9/5) + 32;
+                $('#temperature').text(`Current Temperature in NYC: ${fahrenheitTemp.toFixed(2)} °F`);
+            });
+            })
+           
+        </script>
+    </head>
+
+    <body>
+        <p id="temperature"></p>
+    </body>
+
+</html>
