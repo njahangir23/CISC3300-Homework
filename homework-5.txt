@@ -37,7 +37,7 @@
    method be to:
 
             a. retrieve multiple posts
-               URI: /posts/{id} 
+               URI: /posts
                HTTP Method: GET
 
             b. retrieve a single post
