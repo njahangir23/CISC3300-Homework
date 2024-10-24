@@ -1,20 +1,27 @@
 1. What is PHP? What do server side languages do in web development?
-   PHP is a server-side scripting language used for web development. iT can be embedded in HTML
-   and is used to build dynamic websites by handling server-side logic such as form handling, session
+   PHP stands for Hypertext Preprocessor. PHP is a server-side scripting language used for web development. It can
+   be embedded in HTML and is used to build dynamic websites by handling server-side logic such as form handling, session
    management, database interactions and other things. Server-side languages run on the web server and
    are responsible for managing the back-end operations of a web application. The languages can process
-   user inputs, control seesion management and perform security checks.
+   user inputs, interact with other servers, control seesion management and perform security checks.
 
 2. What are some examples of how PHP and JavaScript are alike and how they differ?
    Both PHP and JavaScript are scripting languages, meaning that they can be written as scripts that exccute
    commands that are used to control how a webpage behaves or responds to user interactions. Both can be used
-   to manipulate HTML and interact with databases. However, PHP requires a server to run (ex. Apache) and it handles back-
+   to manipulate HTML and interact with databases. Both are dynamic, interpreted languages, with JavaScript being mainly
+   client-side and PHP handling server-side logic. However, PHP requires a server to run (ex. Apache) and it handles back-
    end logic like interacting with a database. PHP usually runs one request at a time. JavaScript can in the browser without
    needing a server and it handles front-end tasks like user interactions and animations. JavaScript can run asynchronously.
+   While JavaScript is event-driven and runs asynchronously using an event loop, PHP operates synchronously using a 
+   multi-threaded model. JavaScript uses prototypes for object-oriented programming, while PHP is class-based. 
+   Each language has distinct memory management systems, with JavaScript relying on garbage collection and PHP using
+   reference counting.
 
 3. Why pick PHP over another server side scripting language?
-   PHP is widely used across the web (ex. Facebook, WordPress, Yahoo!) making it supported by hosting providers. PHP is integrated
-   with various databases like MySQL. It also works on many platforms and can easily be embedded in HTML.
+   PHP is widely used across the web (ex. Facebook, WordPress, Yahoo!) making it supported by hosting providers. PHP is 
+   integrated with various databases like MySQL. It also works on many platforms and can easily be embedded in HTML.
+   PHP is easy to learn as well, it's syntax is straightforward and similiar to HTML. It also has rich documentation, 
+   with a lot of tutorials.
 
 4. What’s the difference between the include and require keywords in PHP?
    The 'include' keyword includes and evaluates the specified file and if the file is not found or there's an error, it will emit
@@ -28,5 +35,6 @@
 
 5. Compare and contrast echo and var_dump.
    'echo' is a statement that outputs the given value or varaible. It can be used to display plain text or HTML like content in the 
-   browser. 'var_dump' is similiar in that it outputs the value in addition to including the values' type.
+   browser. 'var_dump' is similiar in that it outputs the value(s) in addition to including the values' type. It can print 
+   out non-primitive types.
 
