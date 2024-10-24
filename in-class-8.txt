@@ -1,0 +1,31 @@
+1. Classes are ________ for creating objects.------------------------------------------------templates
+
+2. The _______ of a property, a method or a constant can be defined by prefixing the
+declaration with the keywords public, protected or private.----------------------------------visibility
+
+3. When a class derives from another class is called ________--------------------------------inheritance
+
+4. ________ allow the PHP interpreter to tell the difference between two classes, functions,
+or constants that share the same name.-------------------------------------------------------namespaces
+
+5. Several predefined variables in PHP are ________, which means they are available in
+all scopes throughout a script.--------------------------------------------------------------"superglobals"
+
+6. ________ can be called directly, from within a script, to perform a specific task.---------functions
+
+7. The _______ function sends a raw HTTP header to a client.---------------------------------- header()
+
+8. ________ is an architectural/design pattern that separates an application into three main
+logical components Model, View, and Controller.-----------------------------------------------MVC
+
+9. ________ allow developers to use code that they, or other programmers, have already
+written to perform a task.--------------------------------------------------------------------Libraries
+
+Notes:
+- interfaces are more strict than abstract classes
+- namspaces declaring the file path 
+- to use a class, namespacce and require
+- if two classes are in the same directory, that directory is implied
+- every HTTP request has headers
+- to respond with JSON, we set the response data type
+- 
