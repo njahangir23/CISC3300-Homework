@@ -1,0 +1,37 @@
+1. What is a class? What is an object? What is OOP?
+   A class in PHP is a template for creating objects. It defines properties (data) and methods (functions) that the 
+   created objects can have.
+   An object is an instance of a class, representing dynamic data and behavior based on the class blueprint.
+   OOP (Object-Oriented Programming) is a programming paradigm centered around creating classes and objects to structure
+   software in a modular way, often including features like encapsulation, inheritance, and polymorphism​
+
+2. Why use an abstract class in OOP?
+   An abstract class is used in OOP to provide a base class that cannot be instantiated directly but can be modified/used 
+   by other classes. It allows defining default behaviors (methods) that other subclasses can inherit or override, making 
+   it useful when a class needs to provide high-level functionality while leaving specific implementations to derived 
+   classes​. An abstract class is a template for other templates, it specifies what a class should do. It is useful for 
+   big projects when a lot of classes have certain methods and behvior in common, instead of rewritting the code over 
+   and over again, you can create an abstract class that includes those commonalities and make those other classes
+   inherit/use them. This allows your code to be more simpler and it is easier to debug and understand.
+
+3. What are superglobals in PHP, what are some examples of data they provide?
+   Superglobals are predefined variables in PHP that are accessible in all scopes of a script without needing to declare
+   them as global. Examples include: $_SERVER, which provides server and request information such as 
+   $_SERVER['REQUEST_METHOD'] for the request method (e.g., GET, POST) and $_SERVER["REQUEST_URI"] for the URI of the 
+   requested page. Other examples include $_GET, $_POST, and $_SESSION
+
+4. What are the two steps to setting up and using a class via namespaces?
+   Step 1: Define a namespace using the namespace keyword in the class file, creating a unique identifier for the class 
+   to prevent naming conflicts.
+   Step 2: In the code where the class is used, either reference it with the full namespace path or import it using the 
+   use keyword to avoid typing the entire path each time the class is accessed. For instance, use app\models\Post; 
+   allows for creating a new instance with $post = new Post()
+
+5. What is MVC? Detail the different parts.
+   MVC (Model-View-Controller) is a design pattern that separates an application into three interconnected components:
+   Model: Manages data and business logic. It communicates with the database and handles data interactions, responding 
+   to requests from the controller.
+   View: Manages the user interface and presentation. It displays data received from the controller, generally formatted
+   with HTML/CSS/JavaScript.
+   Controller: Acts as an intermediary between the Model and View. It processes user inputs, updates the Model, and 
+   determines which view to render

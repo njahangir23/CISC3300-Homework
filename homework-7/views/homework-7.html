@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .newList{
+            color:cadetblue;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url:'/users',
+                method: 'GET',
+                dataType: 'json',
+                success: function(users){
+                    users.forEach(function(user){
+                        $('#list').append(`<p>${user.name} : ${user.email}</p>`);
+                    });
+                },
+                error: function (){
+                    console.log('error', status);
+                }
+            });
+        });
+
+    </script>
+
+    <title>Homework 7</title>
+
+    </head>
+    <body>
+        <h1>Users</h1>
+        <div id="list" class="newList"></div>
+    </body>
+
+</html>
