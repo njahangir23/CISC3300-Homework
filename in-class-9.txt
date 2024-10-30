@@ -1,0 +1,28 @@
+1. A query string is a set of characters tacked onto the end of a _______.----------------------URL
+
+2. when data is added to a query string at the end of a URL, the PHP interpreter adds that
+   data to a superglobal array called ________ so that the PHP page can access it---------------$_GET
+
+3. POST sends the data in the HTTP headers that we can access via the ________
+   superglobal----------------------------------------------------------------------------------$_POST
+
+4. escaping data involves removing and replacing any characters that should ________ in
+   a value--------------------------------------------------------------------------------------not appear
+
+5. Some characters are reserved in HTML because they are characters that make up the
+   ________.------------------------------------------------------------------------------------HTML language
+
+6. Data validation checks for the ________ of data----------------------------------------------validity
+
+7. a website can tell a browser to store data about the user in a text file called a ________.--cookie
+
+8. ________ store information about a user and their preferences on the server------------------sessions
+
+9. errors or exceptions def--
+errors: messages that the PHP interpreter creates when it has a problem running code, something is wrong here
+exceptions: when code that would normally run is prevented from doing so by an exceptional situation, exceptions are
+            thrown 
+   
+
+Notes:
+ -cookeis are on the frontend, sessions are on the backend
