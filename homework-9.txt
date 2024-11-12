@@ -1,0 +1,27 @@
+1. What is SQL? MySQL? What are relational databases?
+   SQL stands for Structured query language, it is a standard language for database creation and manipulation.
+   MySQL is a relational database program (one of many) that use SQL queries.
+   Relational databases use a structure that allows us to identify and access data is relation to another piece
+   of data in the database, these are called, relationshipsS
+
+2. What is normalization in SQL?
+   Normalization helps organize the columns and tables of a database to ensure that database integrity contraints
+   are properly execute their dependencies. It helps avoid duplicate information by using relationships and scale 
+   our data.
+
+3. What are primary and foreign keys?
+   A primary key is the field/fields that are used to uniquely identify each record in a table. The three requirements
+   for a primary key are: it cannot be null, it must be unique and there can be onlu one defined per table.
+   A foreign key is a field/fields in one table that refernces the primary key in another table. The data in the fields 
+   from both tables is exactly the same and the table that the key is imported from must have existing records before
+   the table with the foreign key record has the matching or related records.
+
+4. What are the three relationship types?
+   One-to-One: for every record in the primary table, there is one and only one record in the foreign table
+   One-to-Many:for evry record in the primary table, there are one or more related records in the foreign table
+   Many-to-Many: for every record in the primary table, there are many related records in the foreign table and for every record in the
+   foreign table, there are many related records in ther primary table.
+
+5. What is the difference between a left join and an inner join?
+   A left join returns all records with everything on table A and anything matching with it from table B.
+   An inner join only gives you the data that matches between table A and table B, there is no extra information like the left join.
